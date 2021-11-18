@@ -4,30 +4,8 @@
   box-sizing: border-box;
 }
 
-/*==== Header =====*/
-.backgorund {
-  width: 100%;
-  height: 1160px;
-  max-height: 1800px;
-  background-image: url(../image/spiderheader.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 30%;
-}
 
-#logo {
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
-.tittle {
-  size: 800px;
-  max-width: 800px;
-  float: left;
-  margin-top: 20px;
-  margin-left: -900px;
-}
-
+/*==== NAV =====*/
 .button {
   position: relative;
   text-align: left;
@@ -65,12 +43,38 @@
   height: 60px;
 }
 
+/*==== Home page - Header  =====*/
+.backgorund {
+  width: 100%;
+  height: 1170px;
+  max-height: 1800px;
+  background-image: url(../image/spiderheader.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.tittle {
+  size: 800px;
+  max-width: 900px;
+  float: left;
+  margin-top: 20px;
+  margin-left: -900px;
+}
+
+
+
 /*==== About =====*/
 
 .about {
   position: relative;
   width: 100%;
-  height: 1160px;
+  height: 1170px;
   max-height: 1800px;
   background-image: url(../image/thor_header.jpg);
   background-repeat: no-repeat;
@@ -86,6 +90,16 @@
 
 }
 
+.about h3::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 5px;
+  background-color: currentColor;
+  bottom: -20px;
+  margin: 10px auto;
+}
+
 .about p {
   position: relative;
   float: right;
@@ -96,18 +110,6 @@
 }
 
 
-#teste h3::after {
-  content: "";
-  margin: 0 auto;
-  bottom: 0;
-  position: absolute;
-  display: block;
-
-  width: 100%;
-  height: 3px;
-  background-color: #fff;
-
-}
 
 /*==== Catalog =====*/
 
@@ -123,6 +125,16 @@
   color: #515050;
 }
 
+.catalog h3::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 5px;
+  background-color: #ff6b57;
+  bottom: -20px;
+  margin: 10px auto;
+}
+
 .catalog p {
   position: relative;
   float: right;
@@ -134,7 +146,7 @@
 
 #button-position {
   position: absolute;
-  top: 259%;
+  top: 262%;
   left: 66%;
   transform: translate(-50%, -50%);
 }
@@ -157,4 +169,181 @@
 .catalog a {
   text-decoration: none;
   color: #fff;
+}
+
+/*==== Catalogo - Header =====*/
+
+.backgorund-catalog {
+  width: 100%;
+  height: 1170px;
+  max-height: 1800px;
+  background-image: url(../image/captainmarvelheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+}
+
+.novidade {
+  size: 800px;
+  max-width: 600px;
+  float: left;
+  margin-top: 300px;
+  margin-left: -700px;
+}
+
+/*==== Catalog =====*/
+
+.container h3 {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 40pt;
+  color: #515050;
+}
+
+.container h3::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 5px;
+  background-color: #ff6b57;
+  bottom: -20px;
+  margin: 10px auto;
+}
+
+
+.container {
+  width: 100%;
+  height: 1600px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  grid-gap: 100px;
+  padding-top: 20px;
+  margin-left: 450px;
+}
+
+.box {
+  height: 558px;
+  margin-top: 8px;
+}
+
+.products {
+  width: 100%;
+  object-fit: cover;
+}
+
+.box button {
+  color: #fff;
+  border: none;
+  background-color: #fe7165;
+  background-image: linear-gradient(#fe7165, #fc403d);
+  border-radius: 20px;
+  padding: 10px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: 18pt;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.box p {
+  margin-top: 10px;
+}
+
+/*==== Contato - Header =====*/
+
+.backgorund-contato {
+
+  width: 100%;
+  height: 1170px;
+  max-height: 1800px;
+  background-image: url(../image/contatoheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+
+}
+
+#fale-conosco {
+  size: 800px;
+  max-width: 600px;
+  float: left;
+  margin-top: 300px;
+  margin-left: -700px;
+}
+
+/*==== Entre em Contato =====*/
+
+.contact h3 {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 40pt;
+  color: #515050;
+}
+
+.contact h3::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 5px;
+  background-color: #ff6b57;
+  bottom: -20px;
+  margin: 10px auto;
+}
+
+.contact p {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 25pt;
+  color: #515050;
+
+}
+
+.form {
+  text-align: center;
+  width: 100%;
+  height: 700px;
+  margin: 0px 0;
+  margin-top: 70px;
+}
+
+.form input {
+  border-radius: 12px;
+  padding: 10px 120px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font: 18pt;
+  margin: 4px 2px;
+  cursor: text;
+}
+
+textarea {
+  border-radius: 12px;
+  padding: 10px 100px;
+  text-align: center;
+  margin: 0px 0;
+  float: center;
+  font: 18pt;
+}
+
+.form button {
+  color: #fff;
+  border: none;
+  background-color: #fe7165;
+  background-image: linear-gradient(#fe7165, #fc403d);
+  border-radius: 20px;
+  padding: 20px 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: 18pt;
+  margin: 4px 2px;
+  cursor: pointer;
 }

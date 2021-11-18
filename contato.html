@@ -5,38 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
+
+    <!--Style-->
+   <link rel="stylesheet" href="/css/main.css">
+
   </head>
   <body>
     <header>
-      <div>
-        <img src="/image/logo.png" alt="logo principal do site, super hero" />
+      <div class="backgorund-contato">
+        <img class="logo" alt="logo principal do site, super hero" src="/image/logo.png" />
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="catálogo.html">Catálogo</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
+          <div class="button">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catálogo.html">Catálogo</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
         </nav>
+        <img id="fale-conosco" src="image/contatotitle.png" alt=" Fale conosco estamo aqui" />
       </div>
     </header>
 
     <main>
-      <div>
-        <img src="image/contatotitle.png" alt=" Fale conosco estamo aqui" />
-        <div>
-          <h3>ENTRE EM CONTATO</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            enim eros, pretium maximus pellentesque non, commodo quis risus.</p>
-        </div>
-        <div>
-          <form action="">
-            <input type="text" placeholder="NOME" /> <br /><br />
-            <input type="email" placeholder="EMAIL" /> <br /><br />
-            <input type="tel" placeholder="TELEFONE" /><br /><br />
+      <div class="contact">
+        <h3>ENTRE EM CONTATO</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Quisque
+            enim eros, pretium maximus<br> pellentesque non, commodo quis risus.</p>
 
-            <textarea cols="30" rows="10" placeholder="Como podemos ajudá-lo?">
+          <form action="">
+            <div class="form">
+              <div>
+                <input type="text" placeholder="NOME" /> <br /><br />
+                <input type="email" placeholder="EMAIL" /> <br /><br />
+                <input type="tel" placeholder="TELEFONE" /><br /><br />
+                <textarea cols="30" rows="10" placeholder="Como podemos ajudá-lo?"></textarea>
+              </div>
+              <button><strong>ENVIAR</strong></button> 
+            </div>
           </form>
-        </div>
       </div>
     </main>
   </body>
