@@ -5,44 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="/css/main.css">
+
   </head>
   <body>
     <header>
-      <div>
-        <img alt="logo principal do site, super hero" src="/image/logo.png" />
+      <div class="backgorund">
+        <img id="logo" alt="logo principal do site, super hero" src="/image/logo.png" />
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="catálogo.html">Catálogo</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
+          <div class="button">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catálogo.html">Catálogo</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
         </nav>
+        <img class="tittle" src="/image/title_spiderman.png" alt="Funko Spider Man" />
       </div>
     </header>
 
     <main>
-      <img src="/image/title_spiderman.png" alt="Funko Spider Man" />
+      
       <section>
-        <div>
-          <h3>QUEM SOMOS</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            enim eros, pretium maximus pellentesque non, commodo quis risus. Ut
-            eleifend elit arcu. Suspendisse sagittis congue risus. Cras varius
-            euismod tortor non lobortis. Nam at mi sagittis, auctor eros vel,
-            congue velit. Donec cursus convallis lectus, in mollis nisl tempor
-            vel. In tincidunt, orci vitae ultrices viverra, nisl nulla cursus
-            diam, eget posuere lectus tellus in magna.</p>
+        <div class="about">
+          <h3 id="teste">QUEM SOMOS</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Quisque
+            enim eros,<br> pretium maximus pellentesque non,<br> commodo quis risus. Ut
+            eleifend elit arcu.<br> Suspendisse sagittis congue risus. Cras<br> varius
+            euismod tortor non lobortis. Nam<br> at mi sagittis, auctor eros vel,
+            congue<br> velit. Donec cursus convallis lectus, in<br> mollis nisl tempor
+            vel. In tincidunt, orci<br> vitae ultrices viverra, nisl nulla cursus<br>
+            diam, eget posuere lectus tellus in<br> magna.</p>
         </div>
         
-        <div>
+        <div class="catalog">
           <h3>CATÁLOGO</h3>
           <img src="image/bonecos.png" alt="imagem com 3 bonecos spider man, goku e o batman"/>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            enim eros, pretium maximus pellentesque non, commodo quis risus. Ut
-            eleifend elit arcu. Suspendisse sagittis congue risus. Cras varius
-            euismod tortor non lobortis. Nam at mi sagittis, auctor eros vel,
-            congue velit.</p>
-          <button>VER CATÁLOGO</button>
+          <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Quisque
+            enim eros, pretium<br> maximus pellentesque non, commodo<br> quis risus. Ut
+            eleifend elit arcu.<br> Suspendisse sagittis congue risus. Cras<br> varius
+            euismod tortor non lobortis. Nam at<br> mi sagittis, auctor eros vel,
+            congue velit.</p>  
+          <div id="button-position">
+            <button><a href="/catálogo.html"><strong>VER CATÁLOGO</strong></a></button>
+          </div>
         </div>
       </section>
     </main>
