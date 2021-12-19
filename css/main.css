@@ -5,40 +5,44 @@
 }
 
 
-/*==== NAV =====*/
-.button {
-  position: relative;
-  text-align: left;
-  top: -160px;
+
+/*==== NAV ===== */
+.menu {
+  display: flex;
+  align-items: center;
 
 }
 
-.button ul {
-  margin-left: 400px;
-
+.navbar {
+  margin-left: 100px;
+  width: 100%;
 }
 
-.button ul a {
-  margin: 50px;
+.navbar ul {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  height: 70px;
 }
 
-.button li {
-  float: left;
-  position: relative;
+.navbar ul li {
+  margin-right: 90px;
 }
 
-.button a {
+.navbar ul li a {
+  color: #ffffff;
   text-decoration: none;
-  float: left;
-  color: #fff;
-  padding: 10px 10px;
-  text-align: center;
-  white-space: nowrap;
-  font-size: 25pt;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 
 
-.button a:hover {
+
+
+.menu a:hover {
   border-bottom: 4px solid #ff6b57;
   height: 60px;
 }
@@ -46,8 +50,7 @@
 /*==== Home page - Header  =====*/
 .backgorund {
   width: 100%;
-  height: 1170px;
-  max-height: 1800px;
+  max-height: 800px;
   background-image: url(../image/spiderheader.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,12 +64,10 @@
 
 
 
-.tittle {
-  size: 800px;
-  max-width: 900px;
-  float: left;
-  margin-top: 20px;
-  margin-left: -900px;
+.title {
+  width: 100%;
+  max-width: 650px;
+  margin-left: 7%;
 }
 
 
@@ -76,8 +77,8 @@
 .about {
   position: relative;
   width: 100%;
-  height: 1170px;
-  max-height: 1800px;
+  height: 800px;
+  max-height: 800px;
   background-image: url(../image/thor_header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,8 +87,8 @@
 .about h3 {
   position: relative;
   text-align: center;
-  padding-top: 100px;
-  font-size: 40pt;
+  padding-top: 3%;
+  font-size: 2.5em;
   color: #ffff;
 
 }
@@ -102,28 +103,38 @@
   margin: 10px auto;
 }
 
-.about p {
-  position: relative;
-  float: right;
-  font-size: 30pt;
+.text-p {
+  width: 600px;
+  margin-top: 10%;
+  margin-left: 55%;
+  font-size: 2em;
   color: #fff;
-  padding-top: 150px;
-  margin-right: 250px;
+
 }
 
 
 
+
+
 /*==== Catalog =====*/
+.catalog-p {
+  width: 500px;
+  font-size: 2em;
+  margin-top: 2%;
+  margin-left: 60%;
+}
+
 
 .catalog {
   width: 100%;
+  height: 600px;
 }
 
 .catalog h3 {
   position: relative;
   text-align: center;
-  padding-top: 100px;
-  font-size: 40pt;
+  padding-top: 3%;
+  font-size: 2.5em;
   color: #515050;
 }
 
@@ -137,19 +148,12 @@
   margin: 10px auto;
 }
 
-.catalog p {
-  position: relative;
-  float: right;
-  font-size: 30pt;
-  color: #515050;
-  padding-top: 150px;
-  margin-right: 250px;
-}
+
 
 #button-position {
   position: absolute;
-  top: 262%;
-  left: 66%;
+  margin-top: 3%;
+  left: 67%;
   transform: translate(-50%, -50%);
 }
 
@@ -162,7 +166,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size: 1em;
   margin: 4px 2px;
   cursor: pointer;
 
@@ -173,33 +177,41 @@
   color: #fff;
 }
 
+
+.bonecos {
+
+  width: 40%;
+  margin-left: 130px;
+  margin-top: -425px;
+
+}
+
 /*==== Catalogo - Header =====*/
 
 .backgorund-catalog {
   width: 100%;
-  height: 1170px;
-  max-height: 1800px;
+  max-height: 800px;
   background-image: url(../image/captainmarvelheader.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 30%;
 }
 
-.novidade {
-  size: 800px;
-  max-width: 600px;
-  float: left;
-  margin-top: 300px;
-  margin-left: -700px;
-}
 
 /*==== Catalog =====*/
+
+.captain-title {
+  width: 100%;
+  max-width: 650px;
+  margin-left: 4%;
+  margin-top: 7%;
+}
 
 .container h3 {
   position: relative;
   text-align: center;
-  padding-top: 100px;
-  font-size: 40pt;
+  padding-top: 3%;
+  font-size: 2.5em;
   color: #515050;
 }
 
@@ -216,20 +228,18 @@
 
 .container {
   width: 100%;
-  height: 1600px;
+  height: 1200px;
 }
 
 .row {
+  margin: 30px 80px 80px 80px;
   display: grid;
-  grid-template-columns: 500px 500px 500px;
-  grid-gap: 100px;
-  padding-top: 20px;
-  margin-left: 450px;
+  grid-template-columns: repeat(3, 33.33%);
 }
 
 .box {
-  height: 558px;
-  margin-top: 8px;
+  padding: 0 50px;
+  margin-top: 50px;
 }
 
 .products {
@@ -247,7 +257,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font: 18pt;
+  font: 1em;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -259,10 +269,8 @@
 /*==== Contato - Header =====*/
 
 .backgorund-contato {
-
   width: 100%;
-  height: 1170px;
-  max-height: 1800px;
+  max-height: 800px;
   background-image: url(../image/contatoheader.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -270,12 +278,11 @@
 
 }
 
-#fale-conosco {
-  size: 800px;
-  max-width: 600px;
-  float: left;
-  margin-top: 300px;
-  margin-left: -700px;
+.contact-title {
+  width: 100%;
+  max-width: 650px;
+  margin-left: 4%;
+  margin-top: 2%;
 }
 
 /*==== Entre em Contato =====*/
@@ -283,8 +290,8 @@
 .contact h3 {
   position: relative;
   text-align: center;
-  padding-top: 100px;
-  font-size: 40pt;
+  padding-top: 3%;
+  font-size: 2.5em;
   color: #515050;
 }
 
@@ -310,8 +317,7 @@
 form {
   text-align: center;
   width: 100%;
-  height: 700px;
-  margin: 0px 0;
+  height: 350px;
   margin-top: 70px;
 }
 
@@ -385,4 +391,229 @@ form button {
   font: 18pt;
   margin-top: 20px;
   cursor: pointer;
+}
+
+
+/* --- MEDIA QURIES MAX-WIDTH: 450PX --- */
+@media screen and (max-width: 450px) {
+  .logo {
+    width: 35%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .backgorund {
+    background-image: url(../image/spidermanheader_mobile.jpg);
+    height: 400px;
+  }
+
+  .menu {
+    flex-direction: column;
+
+  }
+
+  .navbar {
+    margin-left: 0;
+
+  }
+
+  .navbar ul {
+    justify-content: space-evenly;
+
+  }
+
+  .navbar ul li {
+    margin-right: 0;
+  }
+
+  .navbar ul li a {
+    font-size: 1em;
+  }
+
+
+
+  .title {
+    width: 60%;
+    margin-left: -10px;
+    margin-top: 50px;
+  }
+
+  .about {
+    background-color: #fe7165;
+    background-image: linear-gradient(#fe7165, #fc403d);
+    height: 400px;
+  }
+
+  .about h3 {
+    font-size: 1.5em;
+    padding-top: 30PX;
+  }
+
+  .about h3::after {
+    width: 90px;
+    height: 2.5px;
+
+  }
+
+  .text-p {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 1em;
+    color: white;
+  }
+
+
+  .catalog h3 {
+    font-size: 1.5em;
+    padding-top: 30PX;
+  }
+
+  .catalog h3::after {
+    width: 90px;
+    height: 2.5px;
+  }
+
+  .catalog-p {
+
+    height: 150px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #515050;
+  }
+
+  #button-position {
+    position: absolute;
+    top: 165%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .catalog button {
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+    padding: 1px 5px;
+
+  }
+
+  .bonecos {
+    width: 80%;
+    margin-left: 30px;
+    padding-top: 470px;
+  }
+
+  /* PAGINA CATALOGO */
+
+  .backgorund-catalog {
+    background-image: url(../image/captainmarvelheader_Mobile.jpg);
+    background-repeat: no-repeat;
+    height: 400PX;
+  }
+
+  .captain-title {
+    width: 0%;
+  }
+
+  .container h3 {
+    font-size: 1.5em;
+    padding-top: 30PX;
+  }
+
+  .container h3::after {
+    width: 90px;
+    height: 2.5px;
+  }
+
+  .row {
+    grid-template-columns: 100%;
+    margin: 0;
+
+  }
+
+  .box {
+    padding-bottom: 20px;
+  }
+
+  .products {
+    width: 70%;
+  }
+
+  /*--------- PAGINA CONTATO -------------- */
+
+  .backgorund-contato {
+    height: 400px;
+    max-width: 100%;
+    width: 400px;
+  }
+
+  .contact-title {
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  .contact h3 {
+    font-size: 1.5em;
+    padding-top: 30PX;
+  }
+
+  .contact p {
+    width: 200px;
+    margin: 0 auto;
+    font-size: 1em;
+    margin-top: -50px;
+  }
+
+  form div {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form input {
+    width: 100%;
+    border-radius: 12px;
+    padding: 8px;
+    text-align: left;
+    text-decoration: none;
+    cursor: text;
+    border: 1px solid #ccc;
+    font-size: 0.7em;
+    color: #141414;
+    outline: none;
+  }
+
+  form input::placeholder {
+    color: #ccc;
+    text-transform: uppercase;
+
+  }
+
+  form textarea {
+    height: 100px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 5px;
+    padding-top: 10px;
+    margin-top: -80px;
+    font-size: 1em;
+
+  }
+
+  form button {
+    width: 250px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font: 1em;
+    margin-top: 70px;
+
+  }
+
+
+
 }
